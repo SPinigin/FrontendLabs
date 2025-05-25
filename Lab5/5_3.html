@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = 10;
+        document.write('<table>');
+        for (var tr = 1; tr <=10; tr++){
+                if(tr == 1)
+                    document.write('<tr bgcolor="gray">');
+                else
+                    document.write('<tr>');
+
+                for (var td = 1; td <= n; td++){
+                    if(td == 1)
+                        document.write('<td bgcolor="gray">');
+                    else
+                        document.write('<td>');
+
+                    document.write(tr*td);
+                    document.write('</td>');
+                }
+                document.write('</tr>')
+            }
+        document.write('</table>');
+
+        let movies = ["Back to the future", "Terminator", "Forrest Gump"]; 
+        console.log("Array: ");
+        console.log(movies);
+        movies.push("The Matrix");
+        console.log(movies);
+        movies.unshift("Interstellar");
+        console.log(movies);
+        let removedLastMovie = movies.pop();
+        console.log(movies);
+        console.log("Deleted: ", removedLastMovie);
+        let removedFirstMovie = movies.shift();
+        console.log(movies);
+        console.log("Deleted: ", removedFirstMovie);
+    </script>
+</body>
+</html>
