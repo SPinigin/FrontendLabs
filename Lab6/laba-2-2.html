@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа 6</title>
+    
+    <script>
+        function ChangeStyle() {
+            let element = document.getElementById("change");
+            
+            element.style.color = "red";
+            element.style.fontSize = "24px";
+            element.style.textDecoration = "underline";
+            element.style.fontWeight = "bold";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Изменение стилей текста</h1>
+
+    
+    <p>Вариант 1 (по клику): 
+        <a href="#" onclick="ChangeStyle()">Нажмите, чтобы изменить стиль текста</a>
+    </p>
+
+    
+    <p>Вариант 2 (при наведении): 
+        <a href="#" onmouseover="ChangeStyle()">Наведите, чтобы изменить стиль текста</a>
+    </p>
+
+    
+    <p id="change">
+        Этот текст изменит свой стиль при взаимодействии со ссылками выше.
+    </p>
+
+</body>
+</html>
